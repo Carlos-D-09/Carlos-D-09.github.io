@@ -1,14 +1,165 @@
-.hero.has-background{
-    position:relative;
-    overflow: hidden;
+body {
+    background-color: black;
+    background-position: fixed;
+    margin: 0%;
 }
-.hero-background{
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
+
+header{
+    display: flex;
+    height: 100px;
     width: 100%;
-    height: 100%
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsla(180, 100%, 50%, 0.356);
+    padding: 0.5em;
 }
-.hero-background.is-transparente{
-    opacity: .30;
+
+.header-title{
+    order: 2;
+    width: 30%;
+}
+
+.nav-bar{
+    order:3;
+    padding: 20px;
+    width: 60%;
+}
+
+.header-logo{
+    order:1;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.logo{
+    vertical-align: middle;
+}
+
+.logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header h1{
+    color: white;
+    float: left;
+    margin: 0;
+}
+
+header ul{
+    display: inline;
+    list-style-type: none;
+    margin: .5em auto;
+    text-align: center;
+    float:right;
+}
+
+header li{
+    display: inline;
+    align-self: right;
+    padding: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.3em;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.flex-container{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+}
+
+.flex-container3{
+    background-image: url('../images/fondo_video.jpg');
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width:100%;
+}
+.flex-container4{
+    display: flex;
+    background-color: white;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width:100%;
+}
+
+.video-gallery-title{
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    color: white;
+}
+.video-gallery-title h2{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: white;
+}
+
+.video-gallery{
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+    width: 40%;
+}
+
+.gallery-content{
+    height: 80%;
+    width: 90%;
+}
+
+.imagenAcerca{
+    width: 70%;
+    height: 60%;
+    order: 1;
+    /* align-self: center; */
+}
+
+.textoAcerca{
+    width: 30%;
+    height: 40%;
+    order: 2;
+    color: white;
+    text-align: left;
+}
+
+.textoAcerca h2{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.textoAcerca p{
+    font-size: x-large;
+}
+
+.derechos{
+    text-align: center;
+    width: 100%;
 }
