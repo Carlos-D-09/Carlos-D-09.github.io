@@ -1,87 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/36c2a6041f.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/index.css" type="text/css">
-        <link rel="shortcut icon" href="./icons/favicon.png" type="image/icon">
-        <title>
-            Administración de servidores
-        </title>
-    </head>
-    <body>
-        <header>
-            <div class="header-logo">
-                <i class="fa-solid fa-server fa-3x"></i>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Carlos Daniel Medina Sahagún</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="css/index.css"
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fa fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span>Services</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="hero is-fullheight is-primary is-fullheight-with-navbar has-background">
+    <img alt="student" class="hero-background is-transparent" src="https://residenciauniversitarialabuhaira.com/wp-content/uploads/2018/11/cualidades-buen-estudiante.jpg">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class = "subtitle is-5">
+            Hola, mi nombre es
+        </h1>
+        <h3 class="title is-4">
+          Carlos Daniel Medina Sahagún
+        </h3>
+        <h2 class="subtitle is-4">
+          Estudiante de la carrera Ingenieria Informatica en CUCEI
+        </h2>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Acerca de -->
+  <hr>
+  <section class="section" id="about">
+    <!-- Title -->
+    <div class="section-heading">
+      <h3 class="title is-2">About Me</h3>
+      <h4 class="subtitle is-5">Nada es imposible</h4>
+      <div class="container">
+        <p>Empece a estudiar la carrera de ingenirería informatica porque me llamaba la atencion el averiguar como es que
+          funcionaban los programas de las computadoras. Empece la carrera sin ningun conocimiento de programación y hoy 
+          en día considero que mis conocimientos no son malos y me entretenido y superado a mi mismo en multiples veces 
+          gracias a los retos que enfrentado a lo largo de la carrera. Espero seguir incrementando mis habilidades y conocimientos 
+          para algun día ser parte de proyectos más grandes.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="columns has-same-height is-gapless">
+      <div class="column">
+        <!-- Perfil -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">Perfil</h3>
+
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+                <tr>
+                  <td>Dirección:</td>
+                  <td>México</td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>-------</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td>carlos.medina1311@alumnos.udg.mx</td>
+                </tr>
+              </table>
             </div>
-            <div class="header-title">
-                <h1>
-                    Administración de servidores
-                </h1>
+            <br>
+            <div class="buttons has-addons is-centered">
+              <a href = "https://github.com/Carlos-D-09" class="button is-success">
+                <span class = "icon">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>
+                  Github
+                </span>
+              </a>
             </div>
-            <div class="nav-bar">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#home"> <i class="fa-solid fa-house fa-2x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#acerca"> Acerca de</a>
-                        </li>
-                        <li>
-                            <a href="#videos"> Videos</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="flex-container">
-            <div class="Home-image" id="home">
-                <img src="images/Home.jpg" height="60%" width="100%">
-            </div>
+          </div>
         </div>
-        <div class="flex-container2" id="acerca">
-            <div class="imagenAcerca">
-                <img src="images/fondo.jpg" height="100%" width="100%" >
+      </div>
+      <div class="column">
+        <!-- Profile picture -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-square">
+              <img src="https://ih1.redbubble.net/image.2872242581.8604/pp,504x498-pad,600x600,f8f8f8.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Habilidades -->
+        <div class="card">
+          <div class="card-content skills-content">
+            <h3 class="title is-4">Habilidades</h3>
+            <div class="content">
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>JavaScript:</strong>
+                      <br>
+                      <progress class="progress is-danger" value="20" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Phyton:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="70" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>C++:</strong>
+                      <br>
+                      <progress class="progress is-success" value="80" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>HTML5/CSS3</strong>
+                      <br>
+                      <progress class="progress is-warning" value="35" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Databases</strong>
+                      <br>
+                      <progress class="progress is-primary" value="50" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+              
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Java</strong>
+                      <br>
+                      <progress class="progress is-warning" value="45" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
             </div>
-            <div class="textoAcerca"> 
-                <h2>Acerca de</h2>
-                <p>
-                    Esta es la pagina de inicio de mi servidor apache para la materia de administración
-                    de servidores. Desarollada por Carlos Daniel Medina Sahagún.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <hr>
+  <section class="section" id="services">
+    <div class="section-heading">
+      <h3 class="title is-2">Services</h3>
+      <h4 class="subtitle is-5">¿Qué puedo hacer por ti?</h4>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Desarrollo de bases de datos</h4>
+                Diseño y elaboración de base de datos relacionales en MariaDBMySQL y postgres SQL. 
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">API desarrolladas en Flask</h4>
+                Desarrollo personalizado de una API para sus aplicaciones en python 
+                con la herramienta Flask 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Aplicaciones desarrolladas en Qt creator y C++</h4>
+                Elaboración de aplicaciones de escritorio haciendo uso de las herramientas proporcionadas
+                por Qt creator con la posiblidad de poder conectarlas entre si mediante una base de datos
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Aplicaciones web responsiva desarrolladas en Angular</h4>
+                Realizar aplicaciones para web basadas en html, typescript y python para realizar la conexión a 
+                la base de datos.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resumen -->
+  <hr>
+  <section class="section" id="resume">
+    <div class="section-heading">
+      <h3 class="title is-2">Resumen</h3>
+      <h4 class="subtitle is-5">Mas acerca de mi pasado</h4>
+      <button class="button is-link is-medium" disabled>
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Descargar mi resumen</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <hr>
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Portafolio</h3>
+        <h4 class="subtitle is-5">Mis ultimos trabajos</h4>
+      </div>
+      <br>
+
+      <div class="container portfolio-container">
+        <div class="columns">
+          <div class="column is-4">
+            <!-- API FLASK wikiprofes -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title is-centered">
+                  <span>API Flask wikiprofes</small></span>
+                  <span class="is-pulled-right">
+                    <span>
+                      <a href="https://github.com/Ordna-dev/Wikiprofes-API-FLASK-PYTHON.git"></a>
+                    </span>
+                    <span class="tag is-success">API</span>
+                    <span class="tag is-link">Flask</span>
+                  </span>
                 </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="images/flask.png" alt="flask template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://github.com/Ordna-dev/Wikiprofes-API-FLASK-PYTHON.git" class="card-footer-item">Source
+                  Code</a>
+              </footer>
             </div>
+          </div>
+          <div class="column is-4">
+            <!-- LERMA Qtcreator -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title is-centered">
+                  <span>Qt Creator punto de venta Lerma</small></span>
+                  <span class="is-pulled-right">
+                    <span>
+                      <a href="https://github.com/Carlos-D-09/lerma.git"></a>
+                    </span>
+                    <span class="tag is-success">Qt</span>
+                    <span class="tag is-warning">C++</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="images/Lerma.jpg" alt="flask template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://github.com/Carlos-D-09/lerma.git" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+          </div>
         </div>
-        <div class="flex-container3" id="videos">
-            <div class="video-gallery-title">
-                <h2>Videos</h2>
+      </div>
+  </section>
+
+  <!-- Contact -->
+  <hr>
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Contactame</h3>
+        <h4 class="subtitle is-5">Para más informacion</h4>
+      </div>
+      <br>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Nombre</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Nombre">
+              </div>
             </div>
-            <div class="video-gallery">
-                <video class="gallery-content" src="./videos/clip1.mp4" controls="true"></video>
+
+            <div class="field">
+              <label class="label">Correo</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email" value="">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
             </div>
-            <div class="video-gallery">
-                <video class="gallery-content" src="./videos/clip2.mp4" controls="true"></video>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+              </div>
             </div>
-            <div class="video-gallery">
-                <video class="gallery-content" src="./videos/clip3.mp4" controls="true"></video>
+
+            <div class="field is-grouped has-text-centered">
+              <div class="control">
+                <button class="button is-link is-large" disabled><span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Submit</span></button>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="flex-container4">
-            <a href="https://www.facebook.com">
-                <i class="fa-brands fa-facebook fa-2x" style="padding:10px; color:blue"></i>
-            </a>
-            <a href="https://www.youtube.com">
-                <i class="fa-brands fa-youtube fa-2x" style="padding:10px; color:red"></i>
-            </a>
-            <a href="https://www.twitch.tv/">
-                <i class="fa-brands fa-twitch fa-2x" style="padding:10px"></i>
-            </a>
-            <div class="derechos">
-                <img src="./images/linea.png" alt="" height="20px"> <br>
-                Elabora: Carlos Daniel Medina Sahagún
-            </div>
-        </div>
-    </body>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-heading">
+      <p>
+        Se uso una plantilla de
+        <strong>Bulma Personal Template</strong> by <a href="https://mubaidr.js.org">Muhammad Ubaid Raza</a>. The
+        source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
