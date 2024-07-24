@@ -6,8 +6,10 @@
     <title>Carlos Daniel Medina Sahagún</title>
     
     <!-- Styles -->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/buttons.css">
 
     <!-- Scripts -->
     <script src="JS/index.js"></script>
@@ -124,13 +126,23 @@
                     <div class="social-media">
                         <h2>Redes sociales</h2>
                         <div class="social-media-buttons">
-                            <button class="social-media-button">
-                                <i class="fa-brands fa-linkedin fa-lg" style="color: rgb(14, 118, 168);"></i>
-                                <a href="https://www.linkedin.com/in/carlos-daniel-medina-sahagun-810243213">Linkedin</a>
+                            <button class="button-odd">
+                                <a href="https://www.linkedin.com/in/carlos-daniel-medina-sahagun-810243213" target="_blank">
+                                    <i class="fa-brands fa-linkedin fa-lg" style="color: rgb(14, 118, 168);"></i>
+                                    Linkedin
+                                </a>
                             </button>
-                            <button class="social-media-button">
-                                <i class="fa-brands fa-github fa-lg"></i>
-                                <a href="https://github.com/Carlos-D-09">Github</a>
+                            <button class="button-odd">
+                                <a href="https://github.com/Carlos-D-09" target="_blank">
+                                    <i class="fa-brands fa-github fa-lg" style="color: black;"></i>
+                                    Github
+                                </a>
+                            </button>
+                            <button class="button-odd">
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-medium fa-lg" style="color: black;"></i>
+                                    Medium
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -140,7 +152,7 @@
                         <h1>Tecnologías</h1>
                     </div>
                     <div class="skills-content">
-                        <div class="skill-container python">
+                        <div class="skill-container python-text">
                             <label for="python">
                                 <i class="fa-brands fa-python"></i>
                                 Python
@@ -148,28 +160,28 @@
                             <progress id="python" max="100" value="75" class="is-success"></progress>
                         </div>
                         <div class="skill-container">
-                            <label for="html-css" class="html">
+                            <label for="html-css" class="html-text">
                                 <i class="fa-brands fa-html5"></i>
                                 HTML y CSS
                                 <i class="fa-brands fa-css3-alt"></i>
                             </label>
                             <progress id="html-css" max="100" value="70" class="is-success"></progress>
                         </div>
-                        <div class="skill-container javascript">
+                        <div class="skill-container javascript-text">
                             <label for="javascript">
                                 <i class="fa-brands fa-js"></i>
                                 JavaScript
                             </label>
                             <progress id="javascript" max="100" value="60" class="is-warning"></progress>
                         </div>
-                        <div class="skill-container flask">
+                        <div class="skill-container flask-text">
                             <label for="c">
                                 <img src="images/logos/flask.png" width="20px" height="20px" alt="">
                                 Flask
                             </label>
                             <progress id="c" max="100" value="80" class="is-success"></progress>
                         </div>
-                        <div class="skill-container laravel">
+                        <div class="skill-container laravel-text">
                             <label for="c">
                                 <i class="fa-brands fa-laravel"></i>
                                 Laravel
@@ -254,13 +266,125 @@
             <div class="portfolio-title">
                 <h1>Mis proyectos</h1>
             </div>
-            <div class="portfolio-containers">
-
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <div class="carousel-container">
+                        <div class="carousel" id="portfolio-1-carousel">
+                            <div class="carousel-item">
+                                <img src="/images/knownhome-web/admin_group.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/knownhome-web/login.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/knownhome-web/images.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/knownhome-web/dashboard.png">
+                            </div>
+                        </div>
+                        <span class="carousel-shadow"></span>
+                    </div>
+                    <div class="portfolio-project">
+                        <h2>Knownhome - web</h2>
+                    </div>
+                    <div class="portfolio-tags-container">
+                        <div class="portfolio-tags-icon">
+                            <div class="portfolio-tags-icon-item">
+                                <i class="fa-solid fa-tags fa-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-tags-list">
+                            <div class="portfolio-tags-item flask-background">
+                                Flask
+                            </div>
+                            <div class="portfolio-tags-item javascript-background">
+                                JavaScript
+                            </div>
+                            <div class="portfolio-tags-item python-background">
+                                Python
+                            </div>
+                            <div class="portfolio-tags-item tensorflow-background">
+                                TensorFlow
+                            </div>
+                            <div class="portfolio-tags-item html-background">
+                                HTML y CSS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-footer" id="portfolio-1-footer">
+                        <div class="portfolio-description">
+                            <p>
+                                El servidor desarrollado en este proyecto esta pensado para llevar a cabo tres tareas: 
+                            </p>
+                            <ul>
+                                <li>Identificación de objetos en imágenes</li>
+                                <li>API's de consumo para la interacción con una aplicación móvil</li>
+                                <li>Implementación de una página web para la administración de la aplicación móvil</li>
+                            </ul>
+                            <p>
+                                Para la identificación de objetos en imágenes, se entrenó una red neuronal mediante Python y la 
+                                librería de TensorFlow, usando como base una red neuronal convolucional pre-entrenada (Inception V3). 
+                                <br><br>
+                                Para el desarrollo de las API's y el back-end de la página web, se utilizo Flask. Para el desarrollo del front-end
+                                se utilizó HTML5 y CSS3 sin ninguno Framework CSS de por medio. Para hacer interactivo el diseño se hizo uso de JavaScript
+                                con la librería jQuery.
+                            </p>
+                        </div>
+                        <div class="portfolio-links">
+                            <h2>Consulta el código del proyecto: </h2>
+                            <div class="portfolio-links-buttons">
+                                <button class="button-odd">
+                                    <a href="https://github.com/Carlos-D-09/KnownHome" target="_blank">
+                                        <i class="fa-solid fa-globe fa-xl" style="color: var(--primary-color);"></i>
+                                        knownHome
+                                    </a>
+                                </button>
+                                <button class="button-odd">
+                                    <a href="https://github.com/Carlos-D-09/object-recognition" target="_blank">
+                                        <i class="fa-solid fa-circle-nodes fa-xl" style="color: var(--primary-color)"></i>
+                                        Red Neuronal
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-toggle" id="portfolio-1-toggle">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </article>
     </section>
     <footer class="footer">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <div class="footer-container">
+            <div class="footer-message-container">
+                <h2>Conéctate conmigo</h2>
+                <p>
+                    Si tienes una propuesta de trabajo, alguna duda sobre mis proyectos, o simplemente tienes ganas de conversar, 
+                    no dudes en enviarme un mensaje. Me pondré en contacto contigo lo más pronto posible. 
+                    <br><br>
+                    ¡Espero tu mensaje!
+                    <br><br>
+                    Saludos 
+                </p>
+            </div>
+            <div class="footer-form-container">
+                <h2>Formulario de contacto</h2>
+                <div class="footer-input-container">
+                    <input type="text" placeholder="Asunto" id="footer-subject" class="footer-input-subject">
+                </div>
+                <div class="footer-input-container">
+                    <textarea placeholder="Mensaje" id="footer-message"  class="footer-input-message" rows="5" cols="33"></textarea>
+                </div>
+                <div class="footer-form-button">
+                    <button class="button-footer" id="footer-button">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

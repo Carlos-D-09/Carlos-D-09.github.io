@@ -1,0 +1,94 @@
+/* Animation to show smoothly the navbar */
+@keyframes show-navbar{
+    from {
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+    to {
+        opacity: 1; 
+        transform: scale(1);
+        transform-origin: top right;
+    }
+}
+
+/* Animation to remove smoothly the navbar */
+@keyframes remove-navbar{
+    from {
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: top right;
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+    
+}
+
+/* Carousel animation to present image from left to center */
+@keyframes slide-left-in {
+    0%{
+        transform: translateX(var(--carousel-image-sides-width));
+        width: var(--carousel-image-sides-width);
+        height: var(--carousel-image-sides-height);
+    }
+    100%{
+        width: var(--carousel-image-center-width);
+        height: var(--carousel-image-center-height);
+        transform: translateX(0px);
+    }
+}
+
+/* Carousel animation to present image from center to left */
+@keyframes slide-left-out {
+    0%{
+        transform: translateX(var(--carousel-image-sides-width));
+        width: var(--carousel-image-center-width);
+        height: var(--carousel-image-center-height);
+    }
+    100%{
+        width: var(--carousel-image-sides-width);
+        height: var(--carousel-image-sides-height);
+        transform: translateX(0px);
+    }   
+}
+
+@keyframes slide-right-in {
+    0%{
+        transform: translateX(calc(0px - var(--carousel-image-sides-width)));
+        width: var(--carousel-image-sides-width);
+        height: var(--carousel-image-sides-height);
+    }
+    100%{
+        width: var(--carousel-image-center-width);
+        height: var(--carousel-image-center-height);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-right-out {
+    0%{
+        transform: translateX(calc(0px - var(--carousel-image-sides-width)));
+        width: var(--carousel-image-center-width);
+        height: var(--carousel-image-center-height);
+    }
+    100%{
+        width: var(--carousel-image-sides-width);
+        height: var(--carousel-image-sides-height);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes breath-down {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

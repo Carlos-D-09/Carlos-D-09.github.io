@@ -1,13 +1,14 @@
 .navbar{
     width: 100%;
     height: 100px;
+    font-size: 1.3rem;
     position: fixed;
     box-sizing: border-box;
-    background-color: rgb(83,111,80);
+    background-color: var(--navbar-color);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    z-index: 1;
+    z-index: 5;
     font-family: Georgia;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .navbar-menu li:hover{
-    background-color: rgb(104, 141, 95);
+    background-color: var(--navbar-hover);
     
 }
 
@@ -40,7 +41,7 @@
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: rgba(185,160,102,255);
+    color: var(--primary-color);
 }
 
 .navbar-toggle {
@@ -52,18 +53,18 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .navbar-toggle:hover{
-    background-color: RGB(104, 141, 95);
+    background-color: var(--navbar-hover);
     cursor: pointer;
 }
 
 .navbar-toggle span {
     width: 25px;
     height: 3px;
-    background-color: rgb(185,160,102);
+    background-color: var(--primary-color);
     transition: 0.3s ease-in-out;
 }
 
@@ -97,16 +98,16 @@
     .navbar-menu.active {
         display: flex;
         width: 30%;
-        min-height: 300px;
+        min-height: 340px;
         max-height: 600px;
-        background-color: rgb(83,111,80);
+        background-color: var(--navbar-color);
         box-sizing: border-box;
-        z-index: 1;
-        animation: show 1s forwards;
+        z-index: 4;
+        animation: show-navbar 1s forwards;
     }
 
     .navbar-menu.active.hide{
-        animation: remove 1s forwards;
+        animation: remove-navbar 1s forwards;
     }
         
     .navbar-toggle {
@@ -134,31 +135,4 @@
     .navbar-toggle{
         width: 25%;
     }
-}
-
-@keyframes show {
-    from {
-        opacity: 0;
-        transform: scale(0);
-        transform-origin: top right;
-    }
-    to {
-        opacity: 1; 
-        transform: scale(1);
-        transform-origin: top right;
-    }
-}
-
-@keyframes remove {
-    from {
-        opacity: 1;
-        transform: scale(1);
-        transform-origin: top right;
-    }
-    to {
-        opacity: 0;
-        transform: scale(0);
-        transform-origin: top right;
-    }
-    
 }
