@@ -206,7 +206,7 @@ body::-webkit-scrollbar-thumb{
 .timeline-stroke-item span:nth-child(1),
 .timeline-stroke-item span:nth-child(3){
     width: 3px;
-    height: 50px;
+    height: 55px;
 }
 
 .timeline-stroke-item span:nth-child(2){
@@ -347,6 +347,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-flow: row wrap;
     gap: 10px;
 }
 
@@ -1134,10 +1135,6 @@ body::-webkit-scrollbar-thumb{
 
     .portfolio-item{
         width: 95%;
-    }
-
-    .portfolio{
-        padding: 10px;
     }
 }
 
