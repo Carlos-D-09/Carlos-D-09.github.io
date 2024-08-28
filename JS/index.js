@@ -130,6 +130,7 @@ function carousel_toggle(toggle, footer){
     });
 }
 
+//mailto redirect
 function footer_form(){
     let footer_button = document.getElementById('footer-button');
     footer_button.addEventListener('click', () => {
